@@ -16,18 +16,18 @@ export JAVA_OPTS=...
 
 ```sh
 # build executable jar file
-mvn clean package -Dapp.groupId=[group id] -Dapp.artifactId=[artifact id] -Dapp.version=[version]
+mvn clean package -Dapp.warFilePath=[path to your war file] -Dapp.groupId=[group id] -Dapp.artifactId=[artifact id] -Dapp.version=[version]
 ```
 After successful command execution you can find result jar file undex path ```./target/[artifact id]-[version]-executable.jar```
 
 If you would like to install result artufact into local Maven repository type the following in you terminal
 ```
-mvn clean install -Dapp.groupId=[group id] -Dapp.artifactId=[artifact id] -Dapp.version=[version]
+mvn clean install -Dapp.warFilePath=[path to your war file] -Dapp.groupId=[group id] -Dapp.artifactId=[artifact id] -Dapp.version=[version]
 ```
 
 If you would like to deploy result artufact into local Maven repository type the following in you terminal
 ```
-mvn clean deploy -Dapp.groupId=[group id] -Dapp.artifactId=[artifact id] -Dapp.version=[version]
+mvn clean deploy -Dapp.warFilePath=[path to your war file] -Dapp.groupId=[group id] -Dapp.artifactId=[artifact id] -Dapp.version=[version]
 ```
 
 ## Run application: howto
